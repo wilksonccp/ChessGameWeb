@@ -1,1 +1,40 @@
+## Compilação padrão
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Dados locais e secrets
+*.db
+*.mdf
+*.ldf
+*.sqlite
+*.db-shm
+*.db-wal
+*.bak
+*.log
+
+## Configurações do VS e Rider
 .vs/
+.idea/
+*.sln.iml
+
+## Logs
+logs/
+*.log
+
+## EF Core
+Migrations/
+*.snapshot
+
+## Sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Configurações de usuário
+appsettings.Development.json
+secrets.json

@@ -4716,11 +4716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wilks\\OneDrive\\Documentos\\ChessGame\\ChessGame\\ChessGame.csproj",
+      "projectUniqueName": "C:\\Users\\wilks\\OneDrive\\Documentos\\APRENDENDO A PROGRAMAR\\PROJECTS\\ChessGame\\ChessGame\\ChessGame.csproj",
       "projectName": "ChessGame",
-      "projectPath": "C:\\Users\\wilks\\OneDrive\\Documentos\\ChessGame\\ChessGame\\ChessGame.csproj",
+      "projectPath": "C:\\Users\\wilks\\OneDrive\\Documentos\\APRENDENDO A PROGRAMAR\\PROJECTS\\ChessGame\\ChessGame\\ChessGame.csproj",
       "packagesPath": "C:\\Users\\wilks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wilks\\OneDrive\\Documentos\\ChessGame\\ChessGame\\obj\\",
+      "outputPath": "C:\\Users\\wilks\\OneDrive\\Documentos\\APRENDENDO A PROGRAMAR\\PROJECTS\\ChessGame\\ChessGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

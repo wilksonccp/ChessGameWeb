@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZOJo1tcCbVM=",
+  "dgSpecHash": "4mZoOPhd4vk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\wilks\\OneDrive\\Documentos\\ChessGame\\ChessGame\\ChessGame.csproj",
+  "projectFilePath": "C:\\Users\\wilks\\OneDrive\\Documentos\\APRENDENDO A PROGRAMAR\\PROJECTS\\ChessGame\\ChessGame\\ChessGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wilks\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\wilks\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

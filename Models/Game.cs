@@ -3,31 +3,31 @@ using System.Numerics;
 
 namespace ChessGame.Models
 {
-    public class ChessGame
+    public class Game
     {
         public int Id { get; set; }
 
-        // Tipo de jogo (Humano vs Humano, Humano vs IA, etc.)
+        // Game type (Human vs Human, Human vs AI, etc.)
         public string GameMode { get; set; } // "PVP", "PVE", "ONLINE"
 
-        // Referência para os jogadores
+        // Reference for players
         public int WhitePlayerId { get; set; }
         public Player WhitePlayer { get; set; }
 
         public int BlackPlayerId { get; set; }
         public Player BlackPlayer { get; set; }
 
-        // Estado da partida
+        // Match status
         public bool IsActive { get; set; } = true;
         public bool IsCheckmate { get; set; } = false;
         public bool IsDraw { get; set; } = false;
         public string Turn { get; set; } = "White"; // ou "Black"
 
-        // Data de início e fim
+        // Start and end date
         public DateTime StartTime { get; set; } = DateTime.Now;
         public DateTime? EndTime { get; set; }
 
-        // Navegação
+        // Navigation
         public List<Move> Moves { get; set; }
         public GameResult Result { get; set; }
     }
