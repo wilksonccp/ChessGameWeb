@@ -29,7 +29,7 @@ public class GamePlay
 
     // Navigation
     public List<Move> Moves { get; set; }
-    //public GameResult Result { get; set; }
+    public GameResult Result { get; set; }
 
     public Board Board { get; set; } // Navigation property to the board state
 }

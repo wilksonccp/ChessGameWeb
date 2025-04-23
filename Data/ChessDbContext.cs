@@ -12,12 +12,19 @@ public class ChessDbContext : DbContext
     public DbSet<Models.GamePlay> ChessGames { get; set; }
     public DbSet<Move> Moves { get; set; }
     public DbSet<Player> Players { get; set; }
-    //public DbSet<Piece> Pieces { get; set; }
+    public DbSet<Piece> Pieces { get; set; }
     public DbSet<Board> Boards { get; set; }
-    //public DbSet<GameResult> GameResults { get; set; }
+    public DbSet<GameResult> Result { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+
+        modelBuilder.Entity<GamePlay>()
+            .HasOne(g => g.Result)
+            .WithOne(r => r.Game)
+            .HasForeignKey<GameResult>(r => r.GameId)
+            .OnDelete(DeleteBehavior.Cascade);
+
 
         modelBuilder.Entity<GamePlay>()
             .HasOne(g => g.Board)
