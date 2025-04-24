@@ -26,7 +26,6 @@ logs/
 *.log
 
 ## EF Core
-Migrations/
 *.snapshot
 
 ## Sistema operacional

@@ -9,6 +9,6 @@
 
         // Relationship with the game
         public int GameId { get; set; }
-        public GamePlay Game { get; set; } // Navigation property to the game
+        public ChessMatch Game { get; set; } // Navigation property to the game
     }
 }

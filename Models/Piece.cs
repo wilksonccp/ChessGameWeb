@@ -11,6 +11,6 @@
         public bool IsPromoted { get; set; }
         public bool IsInCheck { get; set; }
         public int GameId { get; set; } // Which game does this piece belong to?
-        public GamePlay Game { get; set; }
+        public ChessMatch Game { get; set; }
     }
 }

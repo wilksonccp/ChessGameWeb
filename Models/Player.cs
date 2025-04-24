@@ -13,7 +13,7 @@
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         
         // Navigation properties
-        public List<GamePlay> GamesAsWhite { get; set; }
-        public List<GamePlay> GamesAsBlack { get; set; }
+        public List<ChessMatch> GamesAsWhite { get; set; }
+        public List<ChessMatch> GamesAsBlack { get; set; }
     }
 }

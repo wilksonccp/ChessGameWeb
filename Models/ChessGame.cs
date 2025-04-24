@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace ChessGame.Models;
 
-public class GamePlay
+public class ChessMatch
 {
     public int Id { get; set; }
 

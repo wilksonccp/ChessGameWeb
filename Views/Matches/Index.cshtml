@@ -1,0 +1,43 @@
+@model IEnumerable<ChessGame.Models.ChessMatch>
+
+@{
+    ViewData["Title"] = "Chess Matches";
+}
+
+<h1>Chess Matches</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">New Match</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>White</th>
+            <th>Black</th>
+            <th>Mode</th>
+            <th>Active?</th>
+            <th>Started</th>
+            <th>Turn</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.WhitePlayer?.Name</td>
+                <td>@item.BlackPlayer?.Name</td>
+                <td>@item.GameMode</td>
+                <td>@(item.IsActive ? "Yes" : "No")</td>
+                <td>@item.StartTime.ToString("g")</td>
+                <td>@item.Turn</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
